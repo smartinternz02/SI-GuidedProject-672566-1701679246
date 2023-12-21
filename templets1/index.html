@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adaptivity Level Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C36241;
+        }
+
+            .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header-img {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        flex: 1;
+    }
+
+    .logo img {
+        width: 150px;
+    }
+
+
+    .header h1 {
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-bar {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navigation-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-bar ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .navigation-bar ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+
+    .form-container {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-container label {
+        display: inline-block;
+        width: 180px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    .form-container select,
+    .form-container input[type="submit"] {
+        padding: 5px;
+    }
+
+    .form-container input[type="submit"] {
+        background-color: #C36241;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .form-container input[type="submit"]:hover {
+        background-color: #B85133;
+    }
+
+    .form-heading {
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    .form-section {
+        width: 45%;
+        margin-bottom: 0px;
+    }
+
+    .form-section-right {
+        width: 45%;
+        margin-bottom: 0px;
+        margin-top: 90px; /* Adjust the margin-top value to shift the right section downwards */
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-img">
+                <div class="logo">
+                    <img src="https://static01.nyt.com/images/2020/04/24/education/24sp-Marcus/24sp-Marcus-superJumbo.jpg" alt="Image 1">
+                </div>
+                <h1 style="color: white;">Daily Express</h1>
+                <div class="logo">
+                    <img src="https://static01.nyt.com/images/2020/08/31/multimedia/31parenting-outcomes/31parenting-outcomes-superJumbo.jpg" alt="Image 2">
+                </div>
+            </div>
+        </div>
+        
+           <div class="navigation-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/result">Predict My Adaptivity</a></li>
+            <li><a href="/adapt">Increase My Adaptivity</a></li>
+            <li><a href="updates.html">Daily Updates</a></li>
+            <li><a href="Bolly.html">Bollywood Mania</a></li>
+            <li><a href="Horo.html">Horoscope</a></li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <div class="form-section">
+            <h2 class="form-heading">Predict your adaptivity level by filling out this simple form:</h2>
+            
+            <form action="/predict" method="post">
+                <label for="gender">Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="boy">Boy</option>
+                    <option value="girl">Girl</option>
+                </select>
+                <br><br>
+                <label for="age">Age:</label>
+                <select name="age" id="age">
+                    <option value="1-5">1-5</option>
+                    <option value="6-10">6-10</option>
+                    <option value="11-15">11-15</option>
+                    <option value="16-20">16-20</option>
+                    <option value="21-25">21-25</option>
+                    <option value="26-30">26-30</option>
+                </select>
+                <br><br>
+                <label for="class_duration">Class Duration:</label>
+                <select name="class_duration" id="class_duration">
+                    <option value="0">0</option>
+                    <option value="1-3">1-3</option>
+                    <option value="3-6">3-6</option>
+                </select>
+                <br><br>
+                <label for="financial_condition">Financial Condition:</label>
+                <select name="financial_condition" id="financial_condition">
+                    <option value="rich">Rich</option>
+                    <option value="mild">Mild</option>
+                    <option value="poor">Poor</option>
+                </select>
+                <br><br>
+                      <label for="institute_type">Institution Type:</label>
+    <select name="institute_type" id="institute_type">
+        <option value="Non-Government">Non-Government</option>
+        <option value="Government">Government</option>
+    </select>
+    <br><br>
+    <label for="network_type">Network Type:</label>
+    <select name="network_type" id="network_type">
+        <option value="4G">4G</option>
+        <option value="3G">3G</option>
+        <option value="2G">2G</option>
+    </select>
+    <br><br>
+    <label for="education_level">Education Level:</label>
+    <select name="education_level" id="education_level">
+        <option value="school">School</option>
+        <option value="university">University</option>
+        <option value="college">College</option>
+    </select>
+    <br><br>
+    </div>
+    <div class="form-section-right">
+    <label for="location">Location:</label>
+    <select name="location" id="location">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <br><br>
+    <label for="internet_type">Internet Type:</label>
+    <select name="internet_type" id="internet_type">
+        <option value="mobile data">Mobile Data</option>
+        <option value="Wi-fi">Wi-Fi</option>
+    </select>
+    <br><br>
+    <label for="it_student">IT Student:</label>
+    <select name="it_student" id="it_student">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+    <br><br>
+        <label for="device">Device:</label>
+        <select name="device" id="device">
+            <option value="mobile">Mobile</option>
+            <option value="computer">Computer</option>
+            <option value="tab">Tab</option>
+        </select>
+        <br><br>
+        <label for="self_lms">Self LMS:</label>
+        <select name="self_lms" id="self_lms">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <br><br>
+        <label for="load_shedding">Load-shedding:</label>
+        <select name="load_shedding" id="load_shedding">
+            <option value="low">Low</option>
+            <option value="high">High</option>
+        </select>
+        <br><br>
+                    
+                
+                        <input type="submit" value="Predict">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

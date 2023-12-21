@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adaptivity Level Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C36241;
+        }
+        
+            .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .header h1 {
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-bar {
+        background-color: #f2f2f2;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .navigation-bar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation-bar ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .navigation-bar ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 5px 10px;
+        font-weight: bold;
+    }
+
+    .table-container {
+        margin-top: 50px;
+    }
+
+    table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 80%;
+        background-color: #f2f2f2;
+        color: black;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #C36241;
+        color: white;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: auto;
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 style="color: white;">Daily Express</h1>
+        </div>
+        
+            <div class="navigation-bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/predict">Predict My Adaptivity</a></li>
+            <li><a href="/adapt">Increase My Adaptivity</a></li>
+            <li><a href="updates.html">Daily Updates</a></li>
+            <li><a href="Bolly.html">Bollywood Mania</a></li>
+            <li><a href="Horo.html">Horoscope</a></li>
+            
+        </ul>
+    </div>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Adaptivity Level</th>
+                <th>Measures to Increase Adaptivity</th>
+            </tr>
+            <tr>
+                <td>High</td>
+                <td>Engage in interactive learning activities, participate in group discussions, and seek challenging tasks.</td>
+            </tr>
+            <tr>
+                <td>Moderate</td>
+                <td>Establish a structured study routine, set goals, and seek help when needed.</td>
+            </tr>
+            <tr>
+                <td>Low</td>
+                <td>Identify and address any learning gaps, seek additional resources, and maintain a positive mindset.</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="image-container">
+        <img src="https://epe.brightspotcdn.com/ea/cc/d11901e24dc3a0cc2ed2bed7bb8c/37-rouse.jpg" alt="Image 1">
+        <img src="https://www.skymetweather.com/content/wp-content/uploads/2021/07/Online-Learning-fb.jpg" alt="Image 2">
+    </div>
+
+    <div class="prediction-container">
+        <h2>Adaptivity Level Prediction Result:</h2>
+        <p>Adaptivity Level: {{ prediction }}</p>
+    </div>
+</div>
+</body>
+</html>
